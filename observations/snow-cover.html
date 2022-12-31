@@ -1,0 +1,88 @@
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vesa Terra: Snow-cover</title>
+   <link rel="shortcut icon" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/icon.ico" />
+   <link rel="stylesheet" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/css.css">
+   <style>
+   .bg {
+     background-image: url("C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/snow-cover_bng.jpg");
+     height: 50vw;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="bg">
+     <div class="navbar">
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Observations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/sea-ice.html">Sea-ice</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/snow-cover.html">Snow-cover</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/preci-changes.html">Preci-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/temp-changes.html">Temp-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/fire-area.html">Fire-area</a>
+			<a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/surf-temp.html">Surf-temp</a>
+          </div>
+        </div>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/mlmethods.html">ML Methods Used</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/solution.html">Possible Solution</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/contact.html">Contact</a>
+      </div>
+     <p style="font-family:Exan; color: white; font-size:8vw; text-align: center;">Snow-cover</p>
+     <center><p style="font-family:Exan; color: white; font-size:1.5vw;">How much land will be covered by snow by 2030 in Canada?</p></center>
+   </div>
+   <div style="background-color: rgba(30, 0, 125, 0.8);">
+     <h2 style="clear:right">Description of Dataset   ></h2>
+     <div class="clearfix">
+       <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">Dataset title: <b>Snow cover - Annual variations in spring (April, May and June) snow cover extent
+ </b><br />Dataset link: <a href="https://open.canada.ca/data/en/dataset/58aed95e-e094-422f-a8de-a28e81a9d744/resource/df7ebb46-41ad-4654-a5e1-bc9a4cab1366">https://open.canada.ca/data/en/dataset/58aed95e-e094-422f-a8de-a28e81a9d744/resource/df7ebb46-41ad-4654-a5e1-bc9a4cab1366</a>
+<br /><br />This dataset contains annual variations in spring snow cover across Canada from 1972 to 2016.<br /><br /><i>What is snow cover?</i><br /><br />Snow cover is land covered by snow.<br /><br /><i>Why is less snow cover bad?</i><br /><br />Less snow cover means more energy is absorbed in the Earth's surface, resulting in warming. Less snow cover also disrupts ecosystems that have coexisted with similar snow patterns for long periods of time.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(20, 0, 83, 0.8);">
+    <h2 style="clear:right">Machine learning model   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%;"><b>ML Model Used: LSTM Recurrent Neural Network</b><br /><br /><i>To find out more, click the "ML Methods Used" button on the top navigation bar.</i><br /><br /><b>Parameters:</b><br /><br />I'm looking back 20 years to predict values until 2030.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(14, 0, 55, 0.8);">
+    <h2 style="clear:right">Visual   ></h2>
+    <div class="clearfix">
+     <img src="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/snow-cover_graph.png" width = 100% />
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">As you can see, all three lines of the graph trend downwards. The dotted line depicts the distinction between real data and predictions.<br /><br /><b>April: </b>For the very top line, we can see that there is minimal change in snow cover throughout the graph.<br />The slope of this regression line is roughly -0.003, implying a loss of roughly 24000 sq. km yearly of April snow cover.<br /><br /><b>May: </b>For the middle line, we can see that there is a slight change in snow cover throughout the graph.<br />The slope of this regression line is roughly -0.015, implying a loss of roughly 85000 sq. km yearly of May snow cover.<br /><br /><b>June: </b>For the bottom line, we can see that there is a noticeable change in snow cover throughout the graph.<br />The slope of this regression line is roughly -0.037, implying a loss of roughly 136000 sq. km yearly of June snow cover.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(9, 0, 37, 0.8);">
+    <h2 style="clear:right">Conclusion   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">This observation concludes that predicted snow cover levels for June will drastically <b>reduce</b> (by roughly 136000 sq. km yearly). May and June will also have reduced snow cover at roughly 24000 and 85000 sq. km yearly. <br /><br />For reference:<br /><br />24000 sq. km is roughly half the size of Nova Scotia, so imagine the area of snow cover equal to half of Nova Scotia disappearing each year as April comes along. <br /><br />85000 sq. km is roughly the size of New Brunswick, so imagine the area of snow cover equivalent to New Brunswick disappearing each May comes along. <br /><br />136000 sq. km is roughly the size of Nova Scotia and New Brunswick put together. Now imagine a Nova Scotia and New Brunswick's worth of snow disappearing as each June comes along. <br /><br />This will disrupt ecosystems that have lasted in Canada for long periods of time and increase the Earth's crust's warmth resulting in warming.</li></ul></p>
+   </div>
+  </div>
+  <div class="bottom">
+    <p style="font-family:Lato; color: black; font-size:0.8vw;">By using this website, you agree and consent to the Terms and Conditions and the Privacy Policy set forth by Vesa Terra.</p>
+    <ul><li><a href = "C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/legalstuff.html">Terms and Conditions, Privacy Policy, and Copyright & other mentions</a></li></ul>
+    <p style="font-family:Exan; color: black; font-size:1vw; padding-top: 0.5%;">© 2023 Shyamala Pandey</p>
+  </div>
+  <script>
+        let answers=document.querySelectorAll(".intro");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+  </script>
+ </body>
+</html>

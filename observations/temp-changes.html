@@ -1,0 +1,88 @@
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vesa Terra: Temp-changes</title>
+   <link rel="shortcut icon" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/icon.ico" />
+   <link rel="stylesheet" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/css.css">
+   <style>
+   .bg {
+     background-image: url("C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/temp-changes_bng.jpg");
+     height: 50vw;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="bg">
+     <div class="navbar">
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Observations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/sea-ice.html">Sea-ice</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/snow-cover.html">Snow-cover</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/preci-changes.html">Preci-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/temp-changes.html">Temp-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/fire-area.html">Fire-area</a>
+			<a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/surf-temp.html">Surf-temp</a>
+          </div>
+        </div>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/mlmethods.html">ML Methods Used</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/solution.html">Possible Solution</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/contact.html">Contact</a>
+      </div>
+     <p style="font-family:Exan; color: white; font-size:8vw; text-align: center;">Temp-changes</p>
+     <center><p style = "font-family:Exan; color: white; font-size:1.5vw;">How much will temperature departures change by 2030?</p></center>
+   </div>
+   <div style="background-color: rgba(125, 50, 0, 0.8);">
+     <h2 style="clear:right">Description of Dataset   ></h2>
+     <div class="clearfix">
+       <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">Dataset title: <b>Temperature Change in Canada – Annual average temperature departures from 1961–1990 reference value, Canada - Data table
+ </b><br />Dataset link: <a href="https://open.canada.ca/data/en/dataset/49118c5d-850c-40bd-af75-4f47650a9800/resource/ea04c9cb-2c3c-46da-ae45-a478372b35ef">https://open.canada.ca/data/en/dataset/49118c5d-850c-40bd-af75-4f47650a9800/resource/ea04c9cb-2c3c-46da-ae45-a478372b35ef</a>
+<br /><br />This dataset contains temperature departures ( in percentages ) throughout Canada from 1948 to 2018.<br /><br /><i>What are temperature departures?</i><br /><br />Temperature departures are departures from the AVERAGE temperature of the region. This metric indicates how much temperature has deviated ( in percentage in this observation ) from the average temperature value, which helps in understanding long-term trends.<br /><br /><i>What concerns us with temperature departures?</i><br /><br />Climate change is associated with global warming, which leads to a rise in temperature over time.<br /><br />For reference, the last ice age was only about 5 degrees colder than today's average temperature. Even a 2 degrees celsius rise by 2100 can lead to a 36 to 87 cm rise in sea levels.<br /><br />Higher temperatures have the ability to cause major food problems, loss of species' natural habitat, more spread of diseases, and extreme heat waves.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(83, 33, 0, 0.8);">
+    <h2 style="clear:right">Machine learning model   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%;"><b>ML Model Used: LSTM Recurrent Neural Network</b><br /><br /><i>To find out more, click the "ML Methods Used" button on the top navigation bar.</i><br /><br /><b>Parameters:</b><br /><br />I'm looking back 30 years to predict values until 2030.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(55, 22, 0, 0.8);">
+    <h2 style="clear:right">Visual   ></h2>
+    <div class="clearfix">
+     <img src="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/temp-changes_graph.png" width = 100% />
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">As you can see, the graph trends upwards. The dotted line depicts the distinction between real data and predictions. To the left of the dotted line is real data, to the right are predictions by the ML model.<br /><br />The slope of the regression line is roughly 0.03. This means that the ML model predicts a rise of roughly 0.03 percent in temperature DEPARTURES every year ( higher temperature ) in Canada.<br /><br />The ML model also predicts that by 2030, temperature departures will be closer to 2%, roughly twice the temperature departures of 2000.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(35, 14, 0, 0.8);">
+    <h2 style="clear:right">Conclusion   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">This observation concludes that predicted temperature departures will be approximately <b>double</b> the temperature departures of 2000.<br /><br />This will cause a higher average temperature, food problems, habitat erosion, and extreme heat waves.</li></ul></p>
+   </div>
+  </div>
+  <div class="bottom">
+    <p style="font-family:Lato; color: black; font-size:0.8vw;">By using this website, you agree and consent to the Terms and Conditions and the Privacy Policy set forth by Vesa Terra.</p>
+    <ul><li><a href = "C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/legalstuff.html">Terms and Conditions, Privacy Policy, and Copyright & other mentions</a></li></ul>
+    <p style="font-family:Exan; color: black; font-size:1vw; padding-top: 0.5%;">© 2023 Shyamala Pandey</p>
+  </div>
+  <script>
+        let answers=document.querySelectorAll(".intro");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+  </script>
+ </body>
+</html>

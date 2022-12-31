@@ -1,0 +1,88 @@
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vesa Terra: Sea-ice</title>
+   <link rel="shortcut icon" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/icon.ico" />
+   <link rel="stylesheet" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/css.css">
+   <style>
+   .bg {
+     background-image: url("C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/sea-ice_bng.jpg");
+     height: 50vw;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="bg">
+     <div class="navbar">
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Observations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/sea-ice.html">Sea-ice</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/snow-cover.html">Snow-cover</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/preci-changes.html">Preci-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/temp-changes.html">Temp-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/fire-area.html">Fire-area</a>
+			<a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/surf-temp.html">Surf-temp</a>
+          </div>
+        </div>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/mlmethods.html">ML Methods Used</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/solution.html">Possible Solution</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/contact.html">Contact</a>
+      </div>
+     <p style="font-family:Exan; color: white; font-size:8vw; text-align: center;">Sea-ice</p>
+     <center><p style="font-family:Exan; color: white; font-size:1.5vw;">How much sea ice will we have left by 2030 in the Canadian Arctic?<br /><br /><br /></p></center>
+   </div>
+   <div style="background-color: rgba(0, 50, 125, 0.8);">
+     <h2 style="clear:right">Description of Dataset   ></h2>
+     <div class="clearfix">
+       <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">Dataset title: <b>Sea Ice in Canada – Average multi-year sea ice area, Canadian Arctic domain - Data table
+ </b><br />Dataset link: <a href="https://open.canada.ca/data/en/dataset/0ef49a41-d46e-4c09-a4c2-55c3ae5dd9c2/resource/69989110-0822-40f4-a60d-3f71292512f4">https://open.canada.ca/data/en/dataset/0ef49a41-d46e-4c09-a4c2-55c3ae5dd9c2/resource/69989110-0822-40f4-a60d-3f71292512f4</a>
+<br /><br />This dataset contains multi-year sea ice levels in the Canadian Arctic Domain from 1968 to 2018.<br /><br /><i>What is multi-year sea ice?</i><br /><br />Multi-year sea ice is ice that persists and remains in the sea, even during summer. It typically grows thicker, rougher, and more melt-resistant as the years pass. This type of sea ice plays a vital role in Arctic ecosystems since animals tread upon it. Examples of these are polar bears, seals, etc.<br /><br /><i>Why is melting sea ice bad?</i><br /><br />Melting sea ice leads to a rise in water levels. This has the potential to cause flooding. Coastal cities and ecosystems will be most affected by this. It is also weakening atmospheric air currents, resulting in worse, more unpredictable weather.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 33, 83, 0.8);">
+    <h2 style="clear:right">Machine learning model   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%;"><b>ML Model Used: LSTM Recurrent Neural Network</b><br /><br /><i>To find out more, click the "ML Methods Used" button on the top navigation bar.</i><br /><br /><b>Parameters:</b><br /><br />I'm looking back 20 years to predict values until 2030.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 22, 55, 0.8);">
+    <h2 style="clear:right">Visual   ></h2>
+    <div class="clearfix">
+     <img src="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/sea-ice_graph.png" width = 100% />
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">As you can see, the graph trends downwards. The dotted line depicts the distinction between real data and predictions. To the left of the dotted line is real data, to the right are predictions by the ML model.<br /><br />The slope of the regression line is roughly -6.5. This means that the ML model predicts a loss of roughly 6500 square kilometers of sea ice every year in the Canadian Arctic Domain.<br /><br />The ML model also predicts that by 2030, the multi-year sea ice left would be ~300 000 square kilometers, roughly half the original in 1968.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 14, 35, 0.8);">
+    <h2 style="clear:right">Conclusion   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">This observation concludes that predicted sea ice levels will be approximately <b>half</b> of the initial sea ice levels of 1968.<br /><br />For reference:<br /><br />6500 sq. km is roughly the size of 10 Torontos. So imagine an area of sea ice as big as 10 Torontos disappearing every year. <br /><br />This will result in rising sea levels which increases the number and magnitude of floods we will experience.</li></ul></p>
+   </div>
+  </div>
+  <div class="bottom">
+    <p style="font-family:Lato; color: black; font-size:0.8vw;">By using this website, you agree and consent to the Terms and Conditions and the Privacy Policy set forth by Vesa Terra.</p>
+    <ul><li><a href = "C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/legalstuff.html">Terms and Conditions, Privacy Policy, and Copyright & other mentions</a></li></ul>
+    <p style="font-family:Exan; color: black; font-size:1vw; padding-top: 0.5%;">© 2023 Shyamala Pandey</p>
+  </div>
+  <script>
+        let answers=document.querySelectorAll(".intro");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+  </script>
+ </body>
+</html>

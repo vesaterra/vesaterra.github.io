@@ -1,0 +1,88 @@
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vesa Terra: Surf-temp</title>
+   <link rel="shortcut icon" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/icon.ico" />
+   <link rel="stylesheet" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/css.css">
+   <style>
+   .bg {
+     background-image: url("C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/surf-temp_bng.jpg");
+     height: 50vw;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="bg">
+     <div class="navbar">
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Observations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/sea-ice.html">Sea-ice</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/snow-cover.html">Snow-cover</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/preci-changes.html">Preci-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/temp-changes.html">Temp-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/fire-area.html">Fire-area</a>
+			<a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/surf-temp.html">Surf-temp</a>
+          </div>
+        </div>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/mlmethods.html">ML Methods Used</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/solution.html">Possible Solution</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/contact.html">Contact</a>
+      </div>
+     <p style="font-family:Exan; color: white; font-size:8vw; text-align: center;">Surf-temp</p>
+     <center><p style="font-family:Exan; color: white; font-size:1.5vw;">How much will sea surface temperatures rise in the along BC's coast?</p></center>
+   </div>
+   <div style="background-color: rgba(0, 100, 75, 0.8);">
+     <h2 style="clear:right">Description of Dataset   ></h2>
+     <div class="clearfix">
+       <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">Dataset title: <b>British Columbia Lightstation Sea-Surface Temperature and Salinity Data (Pacific), 1914-present - DATA - Active Sites
+ </b><br />Dataset link: <a href="https://open.canada.ca/data/en/dataset/719955f2-bf8e-44f7-bc26-6bd623e82884/resource/2a1463cc-53c8-4268-9986-654e0e729506">https://open.canada.ca/data/en/dataset/719955f2-bf8e-44f7-bc26-6bd623e82884/resource/2a1463cc-53c8-4268-9986-654e0e729506</a>
+<br /><br />This dataset contains observations from 12 stations along the coast of BC from 1914 to now. I will be only using the temperatures for this observation.<br /><br /><i>Why are rising surface temperatures bad?</i><br /><br />A rise in sea-surface temperatures alters marine ecosystems by introducing more heat. For example, changes in ocean temperatures can affect the location of breeding & migration patterns of aquatic species, and threaten coral reefs.<br /><br />Apart from that, increases in sea-surface temperature have led to a rise in the amount of atmospheric water vapour over the oceans. This alters weather cycles and has the capacity to cause more intense precipitation, all while increasing the greenhouse effect as water vapor acts as an excellent thermal insulator.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 74, 62, 0.8);">
+    <h2 style="clear:right">Machine learning model   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%;"><b>ML Model Used: LSTM Recurrent Neural Network</b><br /><br /><i>To find out more, click the "ML Methods Used" button on the top navigation bar.</i><br /><br /><b>Parameters:</b><br /><br />I'm looking back 35 years to predict values until 2030.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 59, 49, 0.8);">
+    <h2 style="clear:right">Visual   ></h2>
+    <div class="clearfix">
+     <img src="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/surf-temp_graph.png" width = 100% />
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">As you can see, the majority of trendlines on the graph trend upwards. The dotted line depicts the distinction between real data and predictions. To the left of the dotted line is real data, to the right are predictions by the ML model.<br /><br />The slope of the average regression line is roughly 0.01. This means that according to the ML model, we can expect a rise of 0.01 degrees Celsius per year in waters along the BC coast.<br /><br />The ML model also predicts that by 2030, sea surface temperatures along the BC coast will have risen by roughly 0.07 degrees Celsius on average, to between 10.5 and 10.7 degrees Celsius.</p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 33, 28, 0.8);">
+    <h2 style="clear:right">Conclusion   ></h2>
+    <div class="clearfix">
+     <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;">This observation concludes that sea-surface temperatures along BC's coast will increase by roughly 0.07 degrees Celsius, to between 10.5 and 10.7 degrees Celsius by 2030.<br /><br />This has the ability to negatively impact our aquatic ecosystems and increase water vapour in our atmosphere. All of which exacerbate our rapidly worsening climate problem.</li></ul></p>
+   </div>
+  </div>
+  <div class="bottom">
+    <p style="font-family:Lato; color: black; font-size:0.8vw;">By using this website, you agree and consent to the Terms and Conditions and the Privacy Policy set forth by Vesa Terra.</p>
+    <ul><li><a href = "C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/legalstuff.html">Terms and Conditions, Privacy Policy, and Copyright & other mentions</a></li></ul>
+    <p style="font-family:Exan; color: black; font-size:1vw; padding-top: 0.5%;">© 2023 Shyamala Pandey</p>
+  </div>
+  <script>
+        let answers=document.querySelectorAll(".intro");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+  </script>
+ </body>
+</html>
