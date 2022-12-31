@@ -1,0 +1,70 @@
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vesa Terra: ML Methods</title>
+   <link rel="shortcut icon" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/icon.ico" />
+   <link rel="stylesheet" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/css.css">
+   <style>
+   .bg {
+     background-image: url("assets/mlmethods_bng.jpg");
+     height: 50vw;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="bg">
+     <div class="navbar">
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Observations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/sea-ice.html">Sea-ice</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/snow-cover.html">Snow-cover</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/preci-changes.html">Preci-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/temp-changes.html">Temp-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/fire-area.html">Fire-area</a>
+			<a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/surf-temp.html">Surf-temp</a>
+          </div>
+        </div>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/mlmethods.html">ML Methods Used</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/solution.html">Possible Solution</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/contact.html">Contact</a>
+      </div>
+      <p style="font-family:Exan; color: white; font-size:8vw; text-align: center;">Machine Learning</p>
+      <center><p style="font-family:Exan; color: white; font-size:1.5vw;">What models am I actually using in this collection?</p></center>
+
+   </div>
+  <div style="background-color: rgba(10, 0, 40, 0.8);">
+    <h2 style="clear:right">LSTM Recurrent Neural Network   ></h2>
+    <div class="clearfix">
+      <p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%;"><i>I'm sorry... what the heck is that?</i><br /><br />To answer that, first let's cover a few things. You have a brain, right? In that brain, there are cells called neurons that communicate with each other. This is what makes you think. Now, in the field of machine learning, we want the computer to be able to think.<br /><br /><i>How do we do that?</i><br /><br /><b>By letting the computer mimic our brain.</b><br /><br />A neural network uses nodes called neurons to process data. You can add layers of neurons to alter the way you want the computer to "think", and that's a neural network for you!<br /><br />Now, there are three types.
+        <ul><li>Artificial Neural Networks - There's an input layer, a/many hidden ( processing ) layer/s, and an output layer. The network tries to learn distinguishable "weights" so that it eventually can figure out patterns in data.</li><br /><li>Convolutional Neural Networks - These make up of filters, also known as "kernels". Kernels are used to extract relevant characteristics of the data. Mostly used in image and video processing, still pretty hyped up.</li><br /><li>Recurrent Neural Networks - This is what I'm using, basically an artificial neural network. But, the hidden layers loop onto each other. This results in the data ( sequential; meaning in a sequence ) being stored in the network. Used in time-series forecasting where you need to remember the past to predict the future.</li></ul></p>
+      <br /><br /><p style="font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;"><i>What's LSTM?</i><br /><br />LSTM stands for Long Short-Term Memory. The model has one input layer, one hidden layer, and one output layer. The self-connected hidden layer contains memory cells and corresponding gate units. But apart from inputting, storing, and outputting data, it can also forget data. All communications between the net and cells are through the gates. This helps bridge gaps between data, which was a challenge in the original recurrent neural network.<br /><br />At the end, I add a regression line to the output to find a trend in the data, which is the line you will see in all the graphs.
+    </div>
+  </div>
+  <div class="bottom">
+    <p style="font-family:Lato; color: black; font-size:1.2vw;">By using this website, you agree and consent to the Terms and Conditions and the Privacy Policy set forth by Vesa Terra.</p>
+    <ul><li><a href = "C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/legalstuff.html">Terms and Conditions, Privacy Policy, and Copyright & other mentions</a></li></ul>
+    <p style="font-family:Exan; color: black; font-size:1vw; padding-top: 0.5%;">© 2023 Shyamala Pandey</p>
+  </div>
+  <script>
+        let answers=document.querySelectorAll(".intro");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+  </script>
+ </body>
+</html>
