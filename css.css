@@ -128,7 +128,7 @@ h2 {
    font-family:Niconne; color: white; font-size:2vw; padding-top: 3%;
  }	 
  p {
-  font-family:LatoL; color: white; font-size:4vw; padding-left: 2%; padding-bottom: 2%; padding-right: 2%;
+  font-family:LatoL; color: white; font-size:3.5vw; padding-left: 2%; padding-bottom: 2%; padding-right: 2%;
  }
  h2 {
   background-color: rgba(153, 153, 153, 0.2);
@@ -148,11 +148,11 @@ h2 {
  }
   .navbar a {
    float: left;
-   font-size: 2.3vw;
+   font-size: 2vw;
    color: white;
    font-family: Exan;
    text-align: center;
-   padding: 2.2vw 2.8vw;
+   padding: 1.9vw 2.5vw;
    text-decoration: none;
  }
 
@@ -162,11 +162,11 @@ h2 {
  }
 
  .dropdown .dropbtn {
-   font-size: 2.3vw;
+   font-size: 2vw;
    border: none;
    outline: none;
    color: white;
-   padding: 2.3vw 2.8vw;
+   padding: 2vw 2.5vw;
    background-color: inherit;
    font-family: Exan;
    margin: 0;
@@ -181,14 +181,14 @@ h2 {
    position: absolute;
    background-color: black;
    min-width: 160px;
-   box-shadow: 0vw 1.8vw 2.3vw 0vw rgba(0,0,0,0.2);
+   box-shadow: 0vw 1.5vw 2vw 0vw rgba(0,0,0,0.2);
    z-index: 1;
  }
 
  .dropdown-content a {
    float: none;
    color: white;
-   padding: 2.1vw 2.8vw;
+   padding: 1.8vw 2.5vw;
    font-family: Exan;
    text-decoration: none;
    display: block;
