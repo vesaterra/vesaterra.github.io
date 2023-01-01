@@ -1,0 +1,89 @@
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vesa Terra: Home</title>
+   <link rel="shortcut icon" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/assets/icon.ico" />
+   <link rel="stylesheet" href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/css.css">
+   <style>
+   .bg {
+     background-image: url("assets/home_bng.png");
+     height: 50vw;
+
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+   }
+   </style>
+ </head>
+ <body>
+   <div class="bg">
+     <div class="navbar">
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/main.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Observations
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/sea-ice.html">Sea-ice</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/snow-cover.html">Snow-cover</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/preci-changes.html">Preci-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/temp-changes.html">Temp-changes</a>
+            <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/fire-area.html">Fire-area</a>
+			<a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/observations/surf-temp.html">Surf-temp</a>
+          </div>
+        </div>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/mlmethods.html">ML Methods Used</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/solution.html">Possible Solution</a>
+        <a href="C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/contact.html">Contact</a>
+      </div>
+     <p style="font-family:Exan; color: white; font-size:7vw; text-align: center;">Vesa Terra</p>
+     <center><p style="font-family:Exan; color: white; font-size:1.5vw;">A developing collection of machine learning models and their predictions related to climate change.</p></center>
+	 <div class="introg">
+     <center>Made by Punya Syon Pandey</center>
+	 </div>
+	 <div class="introg">
+     <center>Aided to publish: Shyamala Pandey</center>
+	 </div>
+	 <div class="introg">
+     <center>Dataset source: Open Canada, Government of Canada</center>
+	 </div>
+   </div>
+   <div style="background-color: rgba(0, 20, 40, 0.8);">
+     <h2 style="clear:right">About me and Vesa Terra   ></h2>
+     <div class="clearfix">
+      <p>Hi.<br /><br />My name is Punya Syon Pandey and I am 16 years old as of when this website was made. I like to play the piano, travel, skateboard, code (of course), and make things from wood and metal. I am also a firm believer in using technology to raise awareness about world issues. Climate change is the next big challenge humanity faces, and we can each do our part to contribute to a solution.<br /><br /><i>Punya, what do you do on your part for now?</i><br /><br /><b>I code to raise awareness about climate change.</b><br /><br />Recently, I developed the Vesa Terra App (which is available on the Play Store and the App Store) where users can estimate their eco-footprint, compare it, learn about the effects and the possible outcomes of warming scenarios, and adopt steps to curb climate change together.<br /><br />The Vesa Terra website is another one of my attempts to raise awareness about climate change, this time using predictions from machine learning models applied to datasets from the Government of Canada, to make observations and get a general idea of where we are headed. I hope you enjoy this website and share it with others.
+      </p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 40, 20, 0.8);">
+    <h2 style="clear:right">Machine learning   ></h2>
+    <div class="clearfix">
+     <p>Machine learning is when computers figure out patterns from data. This can be used to make weather predictions, detect unusual banking transactions, classify spam, or even examine medical images! You can find more information on the ML models I have used if you click the "ML Models Used" button.<br /><br /><i>But Punya, what are you doing with machine learning and climate change?</i><br /><br />I will be taking in datasets from Open Canada (such as snow cover in the last 30 years, sea ice levels, etc.), predicting trends, and finding patterns using machine learning models, then making observations with these trends and finally presenting them to you. Pretty cool, huh?<br /><br /><i>That got nerdy quick.</i></p>
+   </div>
+  </div>
+  <div style="background-color: rgba(0, 100, 100, 0.8);">
+    <h2 style="clear:right">Navigation and structure   ></h2>
+    <div class="clearfix">
+     <p>The Vesa Terra website is an ongoing project and will be constantly updated. I call each evaluation of a dataset an observation. You can find observations at the top left of the website through the dropdown menu labelled "observations".<br /><br />Each observation consists of:<ul><li>The title of the dataset.</li><li>A short description of the dataset.</li><li>The machine learning model I used. To find out what these actually mean, click the "ML Methods Used" button next to "Contact".</li><li>A visual (graph usually).</li><li>Pattern/conclusion drawn from applying the model to the dataset.</li></ul></p>
+   </div>
+  </div>
+  <div class="bottom">
+    <p style="color: black;">By using this website, you agree and consent to the Terms and Conditions and the Privacy Policy set forth by Vesa Terra.</p>
+    <ul style="margin: 0; font-family:LatoL; color: black; font-size: 1vw;"><li><a href = "C:/Users/punya/Documents/Punya/Code/HTML/vesa-terra/legalstuff.html">Terms and Conditions, Privacy Policy, and Copyright & other mentions</a></li></ul>
+    <p style="font-family:Exan; color: black; padding-top: 0.5%;">© 2023 Shyamala Pandey</p>
+  </div>
+  <script>
+        let answers=document.querySelectorAll(".intro");
+        answers.forEach((event)=>{
+            event.addEventListener('click',()=>{
+                if(event.classList.contains("active")){
+                    event.classList.remove("active");
+                }
+                else{
+                    event.classList.add("active");
+                }
+            })
+        })
+  </script>
+ </body>
+</html>

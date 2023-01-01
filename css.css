@@ -32,7 +32,10 @@ h2 {
   color: white;
   font-size: 1.5vw;
  }
- ul {
+ p {
+  font-family:LatoL; color: white; font-size:1.2vw; padding-left: 1%; padding-bottom: 1%;
+ }
+  ul {
    margin: 0;
    font-family:LatoL;
    color: white;
@@ -116,3 +119,82 @@ h2 {
  .dropdown:hover .dropdown-content {
    display: block;
  }
+ 
+ .introg {
+   font-family:Niconne; color: white; font-size:1.5vw; padding-top: 2.5%;
+ }
+ @media only screen and (max-width: 600px) {
+ .introg {
+   font-family:Niconne; color: white; font-size:2vw; padding-top: 3%;
+ }	 
+ p {
+  font-family:LatoL; color: white; font-size:3vw; padding-left: 2%; padding-bottom: 2%; padding-right: 2%;
+ }
+ h2 {
+  background-color: rgba(153, 153, 153, 0.2);
+  padding-top: 2%;
+  padding-left: 2%;
+  padding-bottom: 2%;
+  margin: 0;
+  font-family: Exan;
+  color: white;
+  font-size: 3.2vw;
+ }
+ ul {
+   margin: 0;
+   font-family:LatoL;
+   color: white;
+   font-size: 2.8vw;
+ }
+  .navbar a {
+   float: left;
+   font-size: 2vw;
+   color: white;
+   font-family: Exan;
+   text-align: center;
+   padding: 1.9vw 2.5vw;
+   text-decoration: none;
+ }
+
+ .dropdown {
+   float: left;
+   overflow: hidden;
+ }
+
+ .dropdown .dropbtn {
+   font-size: 2vw;
+   border: none;
+   outline: none;
+   color: white;
+   padding: 1.9vw 2.5vw;
+   background-color: inherit;
+   font-family: Exan;
+   margin: 0;
+ }
+
+ .navbar a:hover, .dropdown:hover .dropbtn {
+   background-color: red;
+ }
+
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: black;
+   min-width: 160px;
+   box-shadow: 0vw 1.5vw 2vw 0vw rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+
+ .dropdown-content a {
+   float: none;
+   color: white;
+   padding: 1.8vw 2.5vw;
+   font-family: Exan;
+   text-decoration: none;
+   display: block;
+   text-align: left;
+ }
+ .bg {
+	 padding-bottom: 10%;
+ }
+}
